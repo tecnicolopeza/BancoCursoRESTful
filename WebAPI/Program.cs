@@ -1,6 +1,9 @@
+using Application; // Asegúrate de que esta línea esté presente si `ServiceExtensions` está en el espacio de nombres `Application`
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddApplicationLayer();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
